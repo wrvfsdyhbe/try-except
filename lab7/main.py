@@ -12,3 +12,23 @@ def get_user_age():
         print("Ошибка!!! ПОжалуйста введите только числа, а не буквы.")
 if __name__=="__main__":
     get_user_age()
+
+
+
+
+
+
+
+def divide_numbers():
+    try:
+        num = int(input("введите число: "))
+        num2 = int(input("делимое число: "))
+        print(num / num2)
+    except ZeroDivisionError:
+        print("на ноль не делится!")
+    except ValueError:
+        print("ввели буквы!!!")
+
+if __name__=="__main__":
+    divide_numbers()
+    
